@@ -3,7 +3,7 @@ import datetime
 
 
 class DateEncoder(json.JSONEncoder):
-    def default(self, o):
+    def default(self, o):# pylint: disable=E0202
         if isinstance(o,datetime.datetime):
             return o.strftime('%Y-%m-%d %H:%M:%S')
         elif isinstance(o,datetime.date):
