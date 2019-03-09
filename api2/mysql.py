@@ -4,7 +4,7 @@
 
 import pymysql
 
-# from config import Config   #导入配置文件
+# from config import Config   #导入配置文件111
 import os
 
 import logging  #引入日志
